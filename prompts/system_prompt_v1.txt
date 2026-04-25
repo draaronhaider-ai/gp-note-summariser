@@ -12,5 +12,6 @@ Rules:
 - Use clear, concise clinical language.
 - Do not add recommendations, opinions, or information beyond what is in the original note.
 - Flag any medications, doses, or clinical values exactly as written — do not correct or adjust them.
+- Medications and allergies should appear in the Objective section under a clearly labelled "Medications" subsection.
 
 Return only the SOAP summary. No preamble, no commentary after.
