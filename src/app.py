@@ -1,14 +1,9 @@
 import anthropic
 import os
 import gradio as gr
-from dotenv import load_dotenv
-
-base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-load_dotenv(os.path.join(base, ".env"))
 
 def load_system_prompt():
-    base = os.path.dirname(os.path.abspath(__file__))
-    prompt_path = os.path.join(base, "prompts", "system_prompt_v9.txt")
+    prompt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts", "system_prompt_v9.txt")
     with open(prompt_path, "r", encoding="utf-8") as f:
         return f.read()
 
