@@ -65,7 +65,7 @@ This tool does not qualify as a Software as a Medical Device (SaMD) under MHRA g
 
 ## Project Structure
 
-\\\
+```
 gp-note-summariser/
 ├── app.py                          # Gradio interface
 ├── requirements.txt
@@ -77,7 +77,7 @@ gp-note-summariser/
 │   └── summariser.py               # Core summarisation script
 ├── evaluation/
 │   └── eval_rubric.md              # Scoring rubric and version logs
-\\\
+```
 
 ---
 
