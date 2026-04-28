@@ -30,7 +30,7 @@ The tool went through 9 documented iterations, where each iteration was tested u
 - **Note 002** — a complex, ambiguous acute presentation in an elderly patient with dementia (~80F, subacute deterioration, diagnostic uncertainty)
 - **Note 003** — a sensitive mental health presentation with passive suicidal ideation (34F, moderate-severe depression)
 
-Each version was then scored against a simple rubric which assed the tool's capabilities in six criterion:
+Each version was then scored against a simple rubric which assessed the tool's capabilities in six criterion:
 
 | Criterion | Description |
 |---|---|
@@ -41,7 +41,7 @@ Each version was then scored against a simple rubric which assed the tool's capa
 | Clinical urgency preservation | Urgency signal preserved from original note |
 | Safety-critical information | High-risk items visible and correctly formatted |
 
-Key prompt design decisions included limiting the flagging of information to the Subjective and Objective sections only (except safeguarding concerns), striclty prohibiting interpretive labels, enforcing single-location medication and allergy documentation, and explicitly defining a RED FLAGS section triggered by documented observations rather than model inference.
+Key prompt design decisions included limiting the flagging of information to the Subjective and Objective sections only (except safeguarding concerns), strictly prohibiting interpretive labels, enforcing single-location medication and allergy documentation, and explicitly defining a RED FLAGS section triggered by documented observations rather than model inference.
 
 ---
 
@@ -65,6 +65,7 @@ This tool does not qualify as a Software as a Medical Device (SaMD) under MHRA g
 
 ## Project Structure
 
+\\\
 gp-note-summariser/
 ├── app.py                          # Gradio interface
 ├── requirements.txt
@@ -76,6 +77,7 @@ gp-note-summariser/
 │   └── summariser.py               # Core summarisation script
 ├── evaluation/
 │   └── eval_rubric.md              # Scoring rubric and version logs
+\\\
 
 ---
 
@@ -91,5 +93,7 @@ gp-note-summariser/
 ## About
 
 Built by a medical graduate exploring the application of large language models in UK primary care, and, more broadly, different ways in which clinicians can apply AI solutions to their own practice. This project is part of a portfolio demonstrating work at the intersection of clinical medicine, prompt engineering, and healthcare AI. 
+
+Try the live demo here: [huggingface.co/spaces/draaronhaider-ai/gp-note-summariser](https://huggingface.co/spaces/draaronhaider-ai/gp-note-summariser)
 
 For professional enquiries: [github.com/draaronhaider-ai](https://github.com/draaronhaider-ai)
